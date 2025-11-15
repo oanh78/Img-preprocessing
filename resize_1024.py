@@ -1,8 +1,9 @@
 import cv2
 import os
 
-input_folder = r"D:\25-26\HK II 25-26\Image_preprocessing\Data" 
-output_folder = r"D:\25-26\HK II 25-26\Image_preprocessing\Img-preprocessing"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+input_folder = os.path.join(current_dir, 'Data')
+output_folder = os.path.join(current_dir, 'Img-preprocessing')
 target_size = (1024, 1024)
 
 # --- Browse image files ---
